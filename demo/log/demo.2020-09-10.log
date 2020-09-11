@@ -1,0 +1,248 @@
+2020-09-10 20:37:32,319  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 18652 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:37:32,319  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 18652 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:37:32,324 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:37:32,324 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:37:32,324  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:37:32,324  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:37:32,390  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-10 20:37:32,391  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-10 20:37:33,049  WARN restartedMain letWebServerApplicationContext:559 |||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/mcakalli1/.m2/repository/io/springfox/springfox-oas/3.0.0/springfox-oas-3.0.0.jar!/springfox/documentation/oas/web/OpenApiControllerWebMvc.class]; nested exception is java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+2020-09-10 20:37:33,057  INFO restartedMain valuationReportLoggingListener:136 |||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-10 20:37:33,073 ERROR restartedMain o.s.b.SpringApplication:837 |||Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/mcakalli1/.m2/repository/io/springfox/springfox-oas/3.0.0/springfox-oas-3.0.0.jar!/springfox/documentation/oas/web/OpenApiControllerWebMvc.class]; nested exception is java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:110)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:811)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:808)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:779)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:192)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Unresolvable class definition for class [springfox.documentation.spring.web.OnServletBasedWebApplication]
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:331)
+	at org.springframework.context.annotation.ConditionEvaluator.getCondition(ConditionEvaluator.java:124)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:96)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:513)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:496)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 34 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: springfox/documentation/common/ClassPresentInClassPathCondition
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.util.ClassUtils.resolveClassName(ClassUtils.java:324)
+	... 41 common frames omitted
+Caused by: java.lang.ClassNotFoundException: springfox.documentation.common.ClassPresentInClassPathCondition
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 61 common frames omitted
+2020-09-10 20:42:53,198  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 34456 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:42:53,198  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 34456 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:42:53,204 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:42:53,204 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:42:53,205  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:42:53,205  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:42:53,292  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-10 20:42:53,292  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-10 20:42:54,241  WARN restartedMain letWebServerApplicationContext:559 |||Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [springfox.boot.starter.autoconfigure.OpenApiAutoConfiguration]; nested exception is java.io.FileNotFoundException: class path resource [springfox/documentation/spring/web/SpringfoxWebConfiguration.class] cannot be opened because it does not exist
+2020-09-10 20:42:54,253  INFO restartedMain valuationReportLoggingListener:136 |||
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-09-10 20:42:54,273 ERROR restartedMain o.s.b.SpringApplication:837 |||Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [springfox.boot.starter.autoconfigure.OpenApiAutoConfiguration]; nested exception is java.io.FileNotFoundException: class path resource [springfox/documentation/spring/web/SpringfoxWebConfiguration.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:609)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:110)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:811)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:808)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:779)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:192)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [springfox/documentation/spring/web/SpringfoxWebConfiguration.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:695)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getRelated(ConfigurationClassParser.java:1089)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getAnnotationAttributes(ConfigurationClassParser.java:1070)
+	at org.springframework.context.annotation.ConfigurationClassParser.collectImports(ConfigurationClassParser.java:548)
+	at org.springframework.context.annotation.ConfigurationClassParser.getImports(ConfigurationClassParser.java:521)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:310)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:599)
+	... 28 common frames omitted
+2020-09-10 20:43:46,651  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 35052 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:43:46,651  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 35052 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:43:46,656 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:43:46,656 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:43:46,657  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:43:46,657  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:43:46,722  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-10 20:43:46,722  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-10 20:43:47,734  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-10 20:43:47,823  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 77ms. Found 1 JPA repository interfaces.
+2020-09-10 20:43:48,569  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-10 20:43:48,753  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 2031 ms
+2020-09-10 20:43:48,924  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-10 20:43:49,141  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-10 20:43:49,300  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 02833551-156d-45dc-bdcf-307e8ea84cd2
+
+2020-09-10 20:43:49,405  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-10 20:43:49,458  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@375510ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@7864f4f7, org.springframework.security.web.header.HeaderWriterFilter@52972131, org.springframework.security.web.csrf.CsrfFilter@1186a3d, org.springframework.security.web.authentication.logout.LogoutFilter@6f77f654, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11edb394, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5281f446, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7a91c6cd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@697c655a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30644e1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cccf438, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b4fb87f, org.springframework.security.web.session.SessionManagementFilter@4b406ba1, org.springframework.security.web.access.ExceptionTranslationFilter@55bfc90a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@654786d0]
+2020-09-10 20:43:50,011  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-10 20:43:50,075  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-10 20:43:50,078  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-10 20:43:52,189  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 20:43:52,698  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-10 20:43:52,707  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 6.541 seconds (JVM running for 8.299)
+2020-09-10 20:43:52,707  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 6.541 seconds (JVM running for 8.299)
+2020-09-10 20:44:03,461  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-10 20:44:03,473  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 12 ms
+2020-09-10 20:49:44,410  INFO Thread-7 tainerEntityManagerFactoryBean:598 |||Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 20:49:44,440  INFO Thread-7 o.s.s.c.ThreadPoolTaskExecutor:218 |||Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-10 20:49:45,696  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 35052 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:49:45,696  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 35052 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:49:45,697 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:49:45,697 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:49:45,697  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:49:45,697  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:49:46,344  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-10 20:49:46,379  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 34ms. Found 1 JPA repository interfaces.
+2020-09-10 20:49:47,052  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-10 20:49:47,119  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 1410 ms
+2020-09-10 20:49:47,256  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-10 20:49:47,327  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-10 20:49:47,393  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: f7a770a4-9743-4dfb-a85e-de80805545b2
+
+2020-09-10 20:49:47,396  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-10 20:49:47,417  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@187cea0, org.springframework.security.web.context.SecurityContextPersistenceFilter@5523c42e, org.springframework.security.web.header.HeaderWriterFilter@4b7680ea, org.springframework.security.web.csrf.CsrfFilter@404125cb, org.springframework.security.web.authentication.logout.LogoutFilter@b2ad81f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2065c7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62a0ac46, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@56f8f7ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@35584444, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fb1ba00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50bf0ecc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5575bee9, org.springframework.security.web.session.SessionManagementFilter@1c85d508, org.springframework.security.web.access.ExceptionTranslationFilter@3f08bc06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7865f9ad]
+2020-09-10 20:49:47,439  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 20:49:47,601  INFO task-2 b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-10 20:49:47,818  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-10 20:49:47,819  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-10 20:49:47,933  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-10 20:49:47,940  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 2.433 seconds (JVM running for 363.532)
+2020-09-10 20:49:47,940  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 2.433 seconds (JVM running for 363.532)
+2020-09-10 20:49:47,943  INFO restartedMain EvaluationDeltaLoggingListener:63 |||Condition evaluation unchanged
+2020-09-10 20:53:21,411  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36016 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:53:21,411  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36016 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:53:21,415 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:53:21,415 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:53:21,416  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:53:21,416  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:53:21,477  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-10 20:53:21,478  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-10 20:53:22,778  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-10 20:53:22,877  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 87ms. Found 1 JPA repository interfaces.
+2020-09-10 20:53:23,717  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-10 20:53:23,880  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 2402 ms
+2020-09-10 20:53:24,172  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-10 20:53:24,287  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-10 20:53:24,807  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 1f22462c-a6bf-4b4e-8deb-1e719556b532
+
+2020-09-10 20:53:24,932  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-10 20:53:24,992  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c54487d, org.springframework.security.web.context.SecurityContextPersistenceFilter@54f6f7, org.springframework.security.web.header.HeaderWriterFilter@10aee293, org.springframework.security.web.csrf.CsrfFilter@7900c040, org.springframework.security.web.authentication.logout.LogoutFilter@3fb65d4f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5042d764, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74a1ece4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@40439c3c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7939936, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b7d762, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d5f467, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6675f094, org.springframework.security.web.session.SessionManagementFilter@753af2c6, org.springframework.security.web.access.ExceptionTranslationFilter@7ae4e043, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e789eb]
+2020-09-10 20:53:25,248  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-10 20:53:25,488  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-10 20:53:25,491  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-10 20:53:27,407  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 20:53:27,985  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-10 20:53:28,209  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 7.4 seconds (JVM running for 9.586)
+2020-09-10 20:53:28,209  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 7.4 seconds (JVM running for 9.586)
+2020-09-10 20:53:34,566  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-10 20:53:34,574  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 8 ms
+2020-09-10 20:56:08,384  INFO Thread-6 tainerEntityManagerFactoryBean:598 |||Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-10 20:56:08,387  INFO Thread-6 o.s.s.c.ThreadPoolTaskExecutor:218 |||Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-10 20:56:08,650  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36016 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:56:08,650  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36016 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-10 20:56:08,650 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:56:08,650 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-10 20:56:08,650  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:56:08,650  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-10 20:56:09,047  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-10 20:56:09,065  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 17ms. Found 1 JPA repository interfaces.
+2020-09-10 20:56:09,263  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-10 20:56:09,287  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 632 ms
+2020-09-10 20:56:09,328  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-10 20:56:09,360  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-10 20:56:09,425  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
