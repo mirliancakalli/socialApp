@@ -42,8 +42,7 @@ public class PostController {
 		try {
 			return ResponseEntity.status(HttpStatus.OK).body(postDao.findAll());
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body("Posts could not be retreived : " + e.getMessage());
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Posts could not be retreived : " + e.getMessage());
 		}
 	}
 
@@ -61,8 +60,7 @@ public class PostController {
 			postDao.delete(post);
 			return ResponseEntity.status(HttpStatus.OK).body("Post deleted Successfylly : " + post);
 		} else {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body("post not deleted Successfylly : " + post.toString());
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("post not deleted Successfylly : " + post.toString());
 		}
 	}
 
@@ -102,7 +100,7 @@ public class PostController {
 
 	@PutMapping(value = "/post")
 	public ResponseEntity<?> modifyPost(@RequestBody Post post) {
-		Map<String, String> response = new HashMap<>();
+		Map<String, Object> response = new HashMap<>();
 		try {
 			Post postExists = postDao.findByPk(post.getId());
 			if (postExists != null) {
@@ -111,14 +109,14 @@ public class PostController {
 				return ResponseEntity.status(HttpStatus.OK).body(post);
 			} else {
 				logger.info("post not exists" + post.getId().toString());
-				response.put("response", "false");
-				response.put("post does not exists in database", post.getId().toString());
+				response.put("response", false);
+				response.put("post", " does not exists in database "+post.getId().toString());
 				return new ResponseEntity<>(response, HttpStatus.OK);
 			}
 		} catch (Exception e) {
 			logger.error("post could not be updated", e);
-			response.put("response", "false");
-			response.put("response", e.getMessage());
+			response.put("response", false);
+			response.put("post", e.getMessage());
 			return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}

@@ -1,33 +1,380 @@
-2020-09-12 00:02:44,480  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 33216 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
-2020-09-12 00:02:44,480  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 33216 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
-2020-09-12 00:02:44,498 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-09-12 00:02:44,498 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-2020-09-12 00:02:44,499  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
-2020-09-12 00:02:44,499  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
-2020-09-12 00:02:44,608  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-12 00:02:44,609  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-12 00:02:46,671  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-09-12 00:02:46,820  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 134ms. Found 4 JPA repository interfaces.
-2020-09-12 00:02:48,362  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
-2020-09-12 00:02:48,688  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 4079 ms
-2020-09-12 00:02:48,941  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-12 00:02:49,193  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-09-12 00:02:49,974  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+2020-09-14 09:59:36,792  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36568 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 09:59:36,792  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36568 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 09:59:36,807 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 09:59:36,807 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 09:59:36,809  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 09:59:36,809  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 09:59:36,963  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 09:59:36,964  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 09:59:40,099  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 09:59:40,354  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 225ms. Found 4 JPA repository interfaces.
+2020-09-14 09:59:41,998  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 09:59:42,285  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 5321 ms
+2020-09-14 09:59:42,808  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 09:59:43,133  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 09:59:44,027  INFO restartedMain etailsServiceAutoConfiguration:86 |||
 
-Using generated security password: eba93325-926c-4322-bf7e-ca60e8f9313e
+Using generated security password: 4763a00d-5733-41cc-9381-91ad8275570d
 
-2020-09-12 00:02:50,142  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
-2020-09-12 00:02:50,246  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bdd2697, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d354d6a, org.springframework.security.web.header.HeaderWriterFilter@3188ac2e, org.springframework.security.web.csrf.CsrfFilter@97e1bca, org.springframework.security.web.authentication.logout.LogoutFilter@67673022, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d686e20, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@671977ae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@44b5946f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@774503fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6401ca5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ca6a3e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@616bd369, org.springframework.security.web.session.SessionManagementFilter@1314764a, org.springframework.security.web.access.ExceptionTranslationFilter@71b3d94c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e32d66b]
-2020-09-12 00:02:50,648  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
-2020-09-12 00:02:51,020  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-12 00:02:51,025  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
-2020-09-12 00:02:55,418  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-09-12 00:02:56,469  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
-2020-09-12 00:02:56,938  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 13.435 seconds (JVM running for 16.818)
-2020-09-12 00:02:56,938  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 13.435 seconds (JVM running for 16.818)
-2020-09-12 00:03:18,819  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
-2020-09-12 00:03:18,837  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 17 ms
-2020-09-12 00:03:52,533  INFO http-nio-8080-exec-10 c.e.d.c.CommentController:69 |||deleting comment for postid= 1
-2020-09-12 00:03:52,533  INFO http-nio-8080-exec-10 c.e.d.c.CommentController:69 |||deleting comment for postid= 1
-2020-09-12 00:03:52,717  INFO http-nio-8080-exec-10 c.e.d.c.CommentController:76 |||comment with id=1 deleted successfully for postid=1
-2020-09-12 00:03:52,717  INFO http-nio-8080-exec-10 c.e.d.c.CommentController:76 |||comment with id=1 deleted successfully for postid=1
+2020-09-14 09:59:44,197  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 09:59:44,304  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1858427, org.springframework.security.web.context.SecurityContextPersistenceFilter@68fdf924, org.springframework.security.web.header.HeaderWriterFilter@436a6239, org.springframework.security.web.csrf.CsrfFilter@1a202a07, org.springframework.security.web.authentication.logout.LogoutFilter@7968b997, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30935b81, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5c8ffa7f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@188a91a9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e33f1f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ed6de41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bce30b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a77bb32, org.springframework.security.web.session.SessionManagementFilter@1ee658fa, org.springframework.security.web.access.ExceptionTranslationFilter@23035d6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a942cf9]
+2020-09-14 09:59:44,717  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 09:59:45,358  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 09:59:45,364  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 09:59:59,641  INFO http-nio-8080-exec-3 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:00:00,537  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:00:01,580  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:00:01,593  INFO http-nio-8080-exec-3 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 1952 ms
+2020-09-14 10:00:01,918  INFO http-nio-8080-exec-3 c.e.d.c.ImageController:41 |||inserting image for PostId=1
+2020-09-14 10:00:01,918  INFO http-nio-8080-exec-3 c.e.d.c.ImageController:41 |||inserting image for PostId=1
+2020-09-14 10:00:02,244  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 26.682 seconds (JVM running for 31.166)
+2020-09-14 10:00:02,244  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 26.682 seconds (JVM running for 31.166)
+2020-09-14 10:00:02,354  INFO http-nio-8080-exec-3 c.e.d.c.ImageController:51 |||image inserted successfully
+2020-09-14 10:00:02,354  INFO http-nio-8080-exec-3 c.e.d.c.ImageController:51 |||image inserted successfully
+2020-09-14 10:00:22,483  INFO http-nio-8080-exec-4 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:00:22,483  INFO http-nio-8080-exec-4 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:01:05,717  INFO http-nio-8080-exec-2 c.e.d.c.CommentController:42 |||inserting comment for fostId=1
+2020-09-14 10:01:05,717  INFO http-nio-8080-exec-2 c.e.d.c.CommentController:42 |||inserting comment for fostId=1
+2020-09-14 10:01:14,020  INFO http-nio-8080-exec-2 c.e.d.c.CommentController:52 |||comment inserted successfully
+2020-09-14 10:01:14,020  INFO http-nio-8080-exec-2 c.e.d.c.CommentController:52 |||comment inserted successfully
+2020-09-14 10:01:19,022  INFO http-nio-8080-exec-6 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:01:19,022  INFO http-nio-8080-exec-6 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:01:53,692  INFO http-nio-8080-exec-10 c.e.d.c.ImageController:41 |||inserting image for PostId=1
+2020-09-14 10:01:53,692  INFO http-nio-8080-exec-10 c.e.d.c.ImageController:41 |||inserting image for PostId=1
+2020-09-14 10:01:53,741  INFO http-nio-8080-exec-10 c.e.d.c.ImageController:51 |||image inserted successfully
+2020-09-14 10:01:53,741  INFO http-nio-8080-exec-10 c.e.d.c.ImageController:51 |||image inserted successfully
+2020-09-14 10:01:56,269  INFO http-nio-8080-exec-7 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:01:56,269  INFO http-nio-8080-exec-7 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:02:34,428  INFO http-nio-8080-exec-5 c.e.d.c.ImageController:70 |||deleting image for postid= 1
+2020-09-14 10:02:34,428  INFO http-nio-8080-exec-5 c.e.d.c.ImageController:70 |||deleting image for postid= 1
+2020-09-14 10:02:34,446  INFO http-nio-8080-exec-5 c.e.d.c.ImageController:77 |||image with id=2 deleted successfully for postid=1
+2020-09-14 10:02:34,446  INFO http-nio-8080-exec-5 c.e.d.c.ImageController:77 |||image with id=2 deleted successfully for postid=1
+2020-09-14 10:02:47,505  INFO http-nio-8080-exec-9 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:02:47,505  INFO http-nio-8080-exec-9 c.e.d.c.PostController:52 |||getting post with id=1
+2020-09-14 10:03:14,374  INFO Thread-6 tainerEntityManagerFactoryBean:598 |||Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:03:14,382  INFO Thread-6 o.s.s.c.ThreadPoolTaskExecutor:218 |||Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:03:14,946  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36568 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:03:14,946  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36568 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:03:14,947 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:03:14,947 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:03:14,948  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:03:14,948  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:03:15,824  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:03:15,893  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2020-09-14 10:03:16,447  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:03:16,506  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 1544 ms
+2020-09-14 10:03:16,618  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:03:16,716  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:03:17,080  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 6fe6a613-60cc-4ad7-90cc-902bf4c0841e
+
+2020-09-14 10:03:17,084  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:03:17,113  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6024874c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a10edcb, org.springframework.security.web.header.HeaderWriterFilter@44b5804e, org.springframework.security.web.csrf.CsrfFilter@32786410, org.springframework.security.web.authentication.logout.LogoutFilter@376a5483, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37f100e6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43793f52, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5049034c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69820b2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5adc78b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3283245c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f00cf93, org.springframework.security.web.session.SessionManagementFilter@3bb95648, org.springframework.security.web.access.ExceptionTranslationFilter@6a5f5060, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ab35dd1]
+2020-09-14 10:03:17,253  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:03:17,451  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:03:17,457  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:03:17,902  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:03:18,090  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:03:18,236  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.418 seconds (JVM running for 227.157)
+2020-09-14 10:03:18,236  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.418 seconds (JVM running for 227.157)
+2020-09-14 10:03:18,242  INFO restartedMain EvaluationDeltaLoggingListener:63 |||Condition evaluation unchanged
+2020-09-14 10:03:25,107  INFO Thread-10 tainerEntityManagerFactoryBean:598 |||Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:03:25,109  INFO Thread-10 o.s.s.c.ThreadPoolTaskExecutor:218 |||Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:03:25,590  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36568 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:03:25,590  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 36568 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:03:25,591 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:03:25,591 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:03:25,591  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:03:25,591  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:03:26,474  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:03:26,544  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2020-09-14 10:03:27,155  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:03:27,222  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 1617 ms
+2020-09-14 10:03:27,378  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:03:27,475  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:03:27,824  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 97c22dd3-2fd3-49d5-be1f-df622e0ac54d
+
+2020-09-14 10:03:27,829  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:03:27,860  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12c8e3c9, org.springframework.security.web.context.SecurityContextPersistenceFilter@154832e2, org.springframework.security.web.header.HeaderWriterFilter@26f4ba85, org.springframework.security.web.csrf.CsrfFilter@31878c0e, org.springframework.security.web.authentication.logout.LogoutFilter@2a71ffa0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a176506, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@78a64eee, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@67eb9cc8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@98ff9af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@727e9483, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@715d38db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6655ea66, org.springframework.security.web.session.SessionManagementFilter@18a23a04, org.springframework.security.web.access.ExceptionTranslationFilter@23388d2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c4d2363]
+2020-09-14 10:03:27,992  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:03:28,233  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:03:28,239  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:03:28,558  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:03:28,771  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:03:28,901  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.422 seconds (JVM running for 237.822)
+2020-09-14 10:03:28,901  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.422 seconds (JVM running for 237.822)
+2020-09-14 10:03:28,905  INFO restartedMain EvaluationDeltaLoggingListener:63 |||Condition evaluation unchanged
+2020-09-14 10:15:13,379  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 15472 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:15:13,379  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 15472 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:15:13,390 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:15:13,390 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:15:13,392  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:15:13,392  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:15:13,529  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:15:13,530  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:15:16,201  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:15:16,461  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 233ms. Found 4 JPA repository interfaces.
+2020-09-14 10:15:18,240  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:15:18,570  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 5040 ms
+2020-09-14 10:15:19,152  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:15:19,442  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:15:20,480  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 566fee4e-79dc-411c-b6f0-191fca89f481
+
+2020-09-14 10:15:20,668  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:15:20,788  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9f6dc17, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e8d9148, org.springframework.security.web.header.HeaderWriterFilter@724b68c7, org.springframework.security.web.csrf.CsrfFilter@12dc16ab, org.springframework.security.web.authentication.logout.LogoutFilter@31b3fbcd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c5f3110, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22354ae7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2ec79fcc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@665e21b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f71e840, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b4aa76e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c00434b, org.springframework.security.web.session.SessionManagementFilter@2821a67c, org.springframework.security.web.access.ExceptionTranslationFilter@1aa986c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d276b4d]
+2020-09-14 10:15:21,268  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:15:21,871  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:15:21,877  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:15:26,591  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:15:27,962  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:15:28,594  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 16.364 seconds (JVM running for 20.846)
+2020-09-14 10:15:28,594  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 16.364 seconds (JVM running for 20.846)
+2020-09-14 10:16:57,926  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:16:57,951  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 24 ms
+2020-09-14 10:17:22,929  INFO http-nio-8080-exec-4 c.e.d.c.PostController:51 |||getting post with id=1
+2020-09-14 10:17:22,929  INFO http-nio-8080-exec-4 c.e.d.c.PostController:51 |||getting post with id=1
+2020-09-14 10:20:14,837  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 18168 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:20:14,837  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 18168 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:20:14,846 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:20:14,846 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:20:14,848  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:20:14,848  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:20:14,988  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:20:14,989  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:20:17,597  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:20:17,803  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 183ms. Found 4 JPA repository interfaces.
+2020-09-14 10:22:31,351  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 7720 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:22:31,351  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 7720 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:22:31,363 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:22:31,363 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:22:31,364  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:22:31,364  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:22:31,515  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:22:31,515  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:22:34,172  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:22:34,407  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 212ms. Found 4 JPA repository interfaces.
+2020-09-14 10:22:36,167  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:22:36,498  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 4982 ms
+2020-09-14 10:22:36,968  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:22:37,204  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:22:38,255  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 723e0ed1-e1b0-4eba-b572-f10186ee93a9
+
+2020-09-14 10:22:38,454  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:22:38,564  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65e83269, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a2bfe27, org.springframework.security.web.header.HeaderWriterFilter@6b21170, org.springframework.security.web.csrf.CsrfFilter@6046efe7, org.springframework.security.web.authentication.logout.LogoutFilter@9571beb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4af23dc6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c8f5562, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@294e06ca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@284c6f70, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35e198e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60bbaeb1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ef60d78, org.springframework.security.web.session.SessionManagementFilter@cf55629, org.springframework.security.web.access.ExceptionTranslationFilter@3c9a5885, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d3b6c1f]
+2020-09-14 10:22:39,006  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:22:39,563  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:22:39,568  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:22:44,367  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:22:45,843  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:22:46,443  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 16.245 seconds (JVM running for 20.93)
+2020-09-14 10:22:46,443  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 16.245 seconds (JVM running for 20.93)
+2020-09-14 10:22:47,929  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:22:47,953  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 23 ms
+2020-09-14 10:22:48,079  INFO http-nio-8080-exec-1 c.e.d.c.PostController:51 |||getting post with id=1
+2020-09-14 10:22:48,079  INFO http-nio-8080-exec-1 c.e.d.c.PostController:51 |||getting post with id=1
+2020-09-14 10:25:22,121  INFO http-nio-8080-exec-5 c.e.d.c.UserController:64 |||start saving the new user
+2020-09-14 10:25:22,121  INFO http-nio-8080-exec-5 c.e.d.c.UserController:64 |||start saving the new user
+2020-09-14 10:33:37,024  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24696 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:33:37,024  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24696 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:33:37,038 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:33:37,038 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:33:37,039  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:33:37,039  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:33:37,204  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:33:37,205  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:33:40,641  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:33:40,918  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 247ms. Found 4 JPA repository interfaces.
+2020-09-14 10:33:43,173  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:33:43,545  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 6339 ms
+2020-09-14 10:33:44,176  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:33:44,452  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:33:45,748  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 1fcd6fde-5d6b-4441-a0f2-200229786b9f
+
+2020-09-14 10:33:46,024  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:33:46,151  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@222efaf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a4a0149, org.springframework.security.web.header.HeaderWriterFilter@7058fa85, org.springframework.security.web.csrf.CsrfFilter@40681366, org.springframework.security.web.authentication.logout.LogoutFilter@83f8abf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59794ef2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6a455e0f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@51a955e6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2deda3cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a7baec4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e9ece4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e4494f, org.springframework.security.web.session.SessionManagementFilter@5c2d4e19, org.springframework.security.web.access.ExceptionTranslationFilter@45feaff3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ba9678]
+2020-09-14 10:33:46,712  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:33:47,324  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:33:47,335  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:34:01,774  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 38560 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:34:01,774  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 38560 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:34:01,784 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:34:01,784 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:34:01,785  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:34:01,785  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:34:01,959  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:34:01,960  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:34:05,385  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:34:05,656  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 241ms. Found 4 JPA repository interfaces.
+2020-09-14 10:34:07,736  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:34:08,150  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 6189 ms
+2020-09-14 10:34:08,880  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:34:09,207  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:34:10,573  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 73accffc-8728-43dd-8019-9e8dbf4d9b2c
+
+2020-09-14 10:34:10,834  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:34:10,979  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17fb4377, org.springframework.security.web.context.SecurityContextPersistenceFilter@688ab1dc, org.springframework.security.web.header.HeaderWriterFilter@2486a22b, org.springframework.security.web.csrf.CsrfFilter@236330ea, org.springframework.security.web.authentication.logout.LogoutFilter@2ec81935, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43f41c5c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6026a002, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@51a1746f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46095fb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63ae0916, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e8f9220, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a78ad0f, org.springframework.security.web.session.SessionManagementFilter@716d1394, org.springframework.security.web.access.ExceptionTranslationFilter@e3304d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6587f584]
+2020-09-14 10:34:11,602  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:34:12,288  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:34:12,294  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:34:18,374  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:34:19,909  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:34:20,657  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 20.314 seconds (JVM running for 25.58)
+2020-09-14 10:34:20,657  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 20.314 seconds (JVM running for 25.58)
+2020-09-14 10:34:51,267  INFO http-nio-8080-exec-2 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:34:51,299  INFO http-nio-8080-exec-2 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 31 ms
+2020-09-14 10:37:15,849  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 9868 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:37:15,849  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 9868 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:37:15,862 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:37:15,862 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:37:15,863  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:37:15,863  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:37:16,033  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:37:16,033  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:37:19,318  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:37:19,581  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 237ms. Found 4 JPA repository interfaces.
+2020-09-14 10:37:21,752  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:37:22,117  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 6082 ms
+2020-09-14 10:37:22,703  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:37:22,963  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:37:24,054  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 09642a9e-39b4-48ba-9c24-3bbd31aa2b22
+
+2020-09-14 10:37:24,291  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:37:24,431  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19333430, org.springframework.security.web.context.SecurityContextPersistenceFilter@3367c174, org.springframework.security.web.header.HeaderWriterFilter@5999ac52, org.springframework.security.web.csrf.CsrfFilter@3706dbd5, org.springframework.security.web.authentication.logout.LogoutFilter@5f436d22, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74e2928f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3f29639d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@722f8793, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@352da470, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43d92586, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b4ff006, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2566b7b3, org.springframework.security.web.session.SessionManagementFilter@309e9db5, org.springframework.security.web.access.ExceptionTranslationFilter@61ea661f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@273f5bc2]
+2020-09-14 10:37:24,983  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:37:25,642  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:37:25,649  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:37:31,078  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:37:32,649  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:37:33,348  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 18.883 seconds (JVM running for 24.047)
+2020-09-14 10:37:33,348  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 18.883 seconds (JVM running for 24.047)
+2020-09-14 10:37:56,305  INFO http-nio-8080-exec-2 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:37:56,317  INFO http-nio-8080-exec-2 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 12 ms
+2020-09-14 10:40:20,440  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24876 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:40:20,440  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24876 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:40:20,450 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:40:20,450 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:40:20,451  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:40:20,451  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:40:20,579  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:40:20,580  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:40:23,066  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:40:23,279  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 189ms. Found 4 JPA repository interfaces.
+2020-09-14 10:40:24,980  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:40:25,280  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 4699 ms
+2020-09-14 10:40:25,764  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:40:27,464  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:40:31,601  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: ef3e28ca-6690-4f4e-a34e-3b3e505d74be
+
+2020-09-14 10:40:31,892  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:40:31,971  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a66a814, org.springframework.security.web.context.SecurityContextPersistenceFilter@58e75a9d, org.springframework.security.web.header.HeaderWriterFilter@62e829de, org.springframework.security.web.csrf.CsrfFilter@6438a1c1, org.springframework.security.web.authentication.logout.LogoutFilter@5136c82c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60fd8f5c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18f5263b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@52d92327, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f86931e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@de458ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a4df327, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39a7652c, org.springframework.security.web.session.SessionManagementFilter@4466f262, org.springframework.security.web.access.ExceptionTranslationFilter@7f241559, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4aecc9d1]
+2020-09-14 10:40:32,551  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:40:33,210  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:40:33,212  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:40:36,997  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:40:38,101  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:40:38,760  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 19.414 seconds (JVM running for 23.437)
+2020-09-14 10:40:38,760  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 19.414 seconds (JVM running for 23.437)
+2020-09-14 10:41:05,644  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:41:05,672  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 26 ms
+2020-09-14 10:41:05,910  INFO http-nio-8080-exec-1 c.e.d.c.UserController:64 |||start saving the new user
+2020-09-14 10:41:05,910  INFO http-nio-8080-exec-1 c.e.d.c.UserController:64 |||start saving the new user
+2020-09-14 10:43:52,388  INFO Thread-6 tainerEntityManagerFactoryBean:598 |||Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:43:52,394  INFO Thread-6 o.s.s.c.ThreadPoolTaskExecutor:218 |||Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:43:53,012  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24876 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:43:53,012  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24876 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:43:53,013 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:43:53,013 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:43:53,014  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:43:53,014  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:43:54,127  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:43:54,201  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 72ms. Found 4 JPA repository interfaces.
+2020-09-14 10:43:54,650  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:43:54,709  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 1684 ms
+2020-09-14 10:43:54,832  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:43:54,927  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:43:55,346  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 8f8864a9-a848-46ff-b36e-aaf905539e65
+
+2020-09-14 10:43:55,351  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:43:55,369  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d985b37, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d6ab093, org.springframework.security.web.header.HeaderWriterFilter@7aec59cc, org.springframework.security.web.csrf.CsrfFilter@20e200a1, org.springframework.security.web.authentication.logout.LogoutFilter@5e7a4ac9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16360958, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@12dcc3b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@ba6e343, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@682b860, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e393bf2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66033fc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dfc47a6, org.springframework.security.web.session.SessionManagementFilter@d3d4e9d, org.springframework.security.web.access.ExceptionTranslationFilter@77769cd0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7334bb9c]
+2020-09-14 10:43:55,505  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:43:55,678  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:43:55,680  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:43:56,106  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:43:56,354  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:43:56,537  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.655 seconds (JVM running for 221.215)
+2020-09-14 10:43:56,537  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.655 seconds (JVM running for 221.215)
+2020-09-14 10:43:56,544  INFO restartedMain EvaluationDeltaLoggingListener:63 |||Condition evaluation unchanged
+2020-09-14 10:44:01,993  INFO Thread-10 tainerEntityManagerFactoryBean:598 |||Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:44:01,994  INFO Thread-10 o.s.s.c.ThreadPoolTaskExecutor:218 |||Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:44:02,590  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24876 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:44:02,590  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 24876 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:44:02,591 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:44:02,591 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:44:02,592  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:44:02,592  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:44:03,621  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:44:03,691  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 68ms. Found 4 JPA repository interfaces.
+2020-09-14 10:44:04,194  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:44:04,253  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 1643 ms
+2020-09-14 10:44:04,385  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:44:04,477  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:44:04,782  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: f5584f55-4ba4-4d58-af77-3d959e18ede3
+
+2020-09-14 10:44:04,787  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:44:04,824  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6eb2e0c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a67ef44, org.springframework.security.web.header.HeaderWriterFilter@7028776d, org.springframework.security.web.csrf.CsrfFilter@71a1a31c, org.springframework.security.web.authentication.logout.LogoutFilter@1f835d9d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24ad7d88, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3075c2c1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@64b48b58, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@371d4851, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55cff17d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@666f77b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bbaeb7b, org.springframework.security.web.session.SessionManagementFilter@46a20dcf, org.springframework.security.web.access.ExceptionTranslationFilter@5bf6963b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44d9caa4]
+2020-09-14 10:44:04,974  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:44:05,160  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:44:05,164  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:44:05,606  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:44:05,780  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:44:05,871  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.464 seconds (JVM running for 230.548)
+2020-09-14 10:44:05,871  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 3.464 seconds (JVM running for 230.548)
+2020-09-14 10:44:05,874  INFO restartedMain EvaluationDeltaLoggingListener:63 |||Condition evaluation unchanged
+2020-09-14 10:44:40,956  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 28916 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:44:40,956  INFO restartedMain c.e.d.DemoApplication:55 |||Starting DemoApplication on ALB-10000623 with PID 28916 (C:\Users\mcakalli1\eclipse-workspace\demo\target\classes started by mcakalli1 in C:\Users\mcakalli1\eclipse-workspace\demo)
+2020-09-14 10:44:40,969 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:44:40,969 DEBUG restartedMain c.e.d.DemoApplication:56 |||Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-14 10:44:40,971  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:44:40,971  INFO restartedMain c.e.d.DemoApplication:651 |||No active profile set, falling back to default profiles: default
+2020-09-14 10:44:41,110  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-14 10:44:41,111  INFO restartedMain sPropertyDefaultsPostProcessor:225 |||For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-14 10:44:43,871  INFO restartedMain epositoryConfigurationDelegate:127 |||Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-14 10:44:44,137  INFO restartedMain epositoryConfigurationDelegate:187 |||Finished Spring Data repository scanning in 236ms. Found 4 JPA repository interfaces.
+2020-09-14 10:44:46,083  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:108 |||Tomcat initialized with port(s): 8080 (http)
+2020-09-14 10:44:46,407  INFO restartedMain letWebServerApplicationContext:285 |||Root WebApplicationContext: initialization completed in 5296 ms
+2020-09-14 10:44:47,048  INFO restartedMain o.s.s.c.ThreadPoolTaskExecutor:181 |||Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-14 10:44:47,355  WARN restartedMain figuration$JpaWebConfiguration:220 |||spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-14 10:44:48,358  INFO restartedMain etailsServiceAutoConfiguration:86 |||
+
+Using generated security password: 6c15a967-7a42-4478-bfaf-f21eeac87175
+
+2020-09-14 10:44:48,560  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: Ant [pattern='/**'], []
+2020-09-14 10:44:48,661  INFO restartedMain s.w.DefaultSecurityFilterChain:43 |||Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dbb282, org.springframework.security.web.context.SecurityContextPersistenceFilter@47032e5f, org.springframework.security.web.header.HeaderWriterFilter@95d1c31, org.springframework.security.web.csrf.CsrfFilter@796b006, org.springframework.security.web.authentication.logout.LogoutFilter@2534f13, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5764cda4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55a849e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49ddcf16, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@29d49d6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@720bf40a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41e688d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2751e2a6, org.springframework.security.web.session.SessionManagementFilter@7446a4a0, org.springframework.security.web.access.ExceptionTranslationFilter@53eced0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e1ef8a7]
+2020-09-14 10:44:49,169  INFO restartedMain b.d.a.OptionalLiveReloadServer:58 |||LiveReload server is running on port 35729
+2020-09-14 10:44:49,788  INFO restartedMain o.s.b.w.e.t.TomcatWebServer:220 |||Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-14 10:44:49,797  INFO restartedMain positoryInitializationListener:49 |||Triggering deferred initialization of Spring Data repositories…
+2020-09-14 10:44:54,501  INFO task-1 tainerEntityManagerFactoryBean:416 |||Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-14 10:44:55,810  INFO restartedMain positoryInitializationListener:53 |||Spring Data repositories initialized!
+2020-09-14 10:44:56,440  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 16.662 seconds (JVM running for 21.54)
+2020-09-14 10:44:56,440  INFO restartedMain c.e.d.DemoApplication:61 |||Started DemoApplication in 16.662 seconds (JVM running for 21.54)
+2020-09-14 10:45:07,183  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:525 |||Initializing Servlet 'dispatcherServlet'
+2020-09-14 10:45:07,210  INFO http-nio-8080-exec-1 o.s.w.s.DispatcherServlet:547 |||Completed initialization in 26 ms

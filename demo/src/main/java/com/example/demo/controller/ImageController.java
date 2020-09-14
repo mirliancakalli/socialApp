@@ -51,7 +51,7 @@ public class ImageController {
 			logger.info("image inserted successfully");
 
 			response.put("response", true);
-			response.put("image added on post", post);
+			response.put("post", post);
 			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (Exception e) {
 			logger.error("error inserting Image ", e);
@@ -65,7 +65,7 @@ public class ImageController {
 	@DeleteMapping(value = "/image/{imageId}/{postId}")
 	public ResponseEntity<?> deleteComment(@PathVariable(value = "postId") Long postId,
 			@PathVariable(value = "imageId") Long imageId) {
-		Map<String, String> response = new HashMap<>();
+		Map<String, Object> response = new HashMap<>();
 		try {
 			logger.info("deleting image for postid= " + postId);
 			Post post = postDao.findByPk(postId);
@@ -79,12 +79,11 @@ public class ImageController {
 			}
 			postDao.save(post);
 
-			response.put("response", "true");
-			response.put("image deleted", post.toString());
+			response.put("response", true);
+			response.put("post", post);
 			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body("Image could not be deleted : " + e.getMessage());
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Image could not be deleted : " + e.getMessage());
 		}
 	}
 

@@ -20,8 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dao.CommentDao;
 import com.example.demo.dao.PostDao;
+import com.example.demo.dao.UserDao;
 import com.example.demo.entity.Comment;
 import com.example.demo.entity.Post;
+import com.example.demo.entity.User;
 
 @RestController
 @RequestMapping(value = "/api")
@@ -34,6 +36,11 @@ public class CommentController {
 	
 	@Autowired
 	private PostDao postDao;
+	
+	@Autowired
+	private UserDao userDao;
+	
+	
 	
 	@PostMapping(value = "/comment/{postId}")
 	public ResponseEntity<?> insertComment(@RequestBody Comment comment,@PathVariable(value = "postId")  Long postId){
@@ -52,19 +59,19 @@ public class CommentController {
 			logger.info("comment inserted successfully");
 
 			response.put("response", true);
-			response.put("comment added", post);
+			response.put("post", post);
 			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (Exception e) {
 			logger.error("error inserting Comment ",e);
  			response.put("response", false);
-			response.put("comment not added", e.getMessage());
+			response.put("comment", e.getMessage());
 			return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 	
 	@DeleteMapping(value = "/comment/{commentId}/{postId}")
 	public ResponseEntity<?> deleteComment(@PathVariable(value = "postId")  Long postId,@PathVariable(value = "commentId")  Long commentId){
-		Map<String, String> response = new HashMap<>();
+		Map<String, Object> response = new HashMap<>();
 		try {
 			logger.info("deleting comment for postid= "+postId);
 			Post post = postDao.findByPk(postId);
@@ -78,8 +85,8 @@ public class CommentController {
 			}
 			postDao.save(post);
 			
-			response.put("response", "true");
-			response.put("comment deleted", post.toString());
+			response.put("response", true);
+			response.put("post", post);
 			return new ResponseEntity<>(response, HttpStatus.OK);
 		} catch (Exception e) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Comment could not be deleted : " + e.getMessage());
@@ -99,17 +106,17 @@ public class CommentController {
 					comToBeUpdated.setUpdated(new Date());
 					
 					commentDao.save(comToBeUpdated);
-					response.put("response", "true");
-					response.put("commentUpdated", comToBeUpdated);
+					response.put("response", true);
+					response.put("comment", comToBeUpdated);
 					
 					return new ResponseEntity<>(response, HttpStatus.OK);
 				}else {
-					response.put("response", "false");
+					response.put("response", false);
 					response.put("comment", "no comment found for id="+updatedComment.getId());
 					return new ResponseEntity<>(response, HttpStatus.OK);
 				}
 			}else {
-				response.put("response", "false");
+				response.put("response", false);
 				response.put("comment", "comment could not be updated for request="+updatedComment.toString());
 				return new ResponseEntity<>(response, HttpStatus.OK);			
 			}
@@ -117,5 +124,79 @@ public class CommentController {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Comment could not be updated : " + e.getMessage());
 		}
 	}
+	
+	@PutMapping(value = "/like/{postId}/{userId}")
+	public ResponseEntity<?> addLike(@PathVariable(value = "postId") Long postId, @PathVariable(value = "userId") Long userId) {
+		Map<String, Object> response = new HashMap<>();
+		try {
+			Post post = postDao.findByPk(postId);
+			User user = userDao.findByPk(userId);
+			if(post != null && user != null) {
+				Boolean hasLiked = false;
+				List<User> likes = post.getLikes();
+				if (likes != null) {
+					for (int i = 0; i < likes.size(); i++) {
+						if (likes.get(i).getId() == user.getId()) {
+							hasLiked = true;
+							break;
+						}
+					}
+				}
+				if (!hasLiked) {
+					likes.add(user);
+				}
+				response.put("response", true);
+				response.put("post", postDao.save(post));
+				return new ResponseEntity<>(response, HttpStatus.OK);
+			}else {
+				response.put("response", false);
+				response.put("error", "either post or user was null");
+				response.put("post", post);
+				response.put("user", user);
+				return new ResponseEntity<>(response, HttpStatus.OK);
+			}
+		} catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Comment could not be updated : " + e.getMessage());
+		}
+	}
+	
+	@DeleteMapping(value = "/like/{postId}/{userId}")
+	public ResponseEntity<?> removeLike(@PathVariable(value = "postId") Long postId, @PathVariable(value = "userId") Long userId) {
+		Map<String, Object> response = new HashMap<>();
+		try {
+			Post post = postDao.findByPk(postId);
+			User user = userDao.findByPk(userId);
+			if(post != null && user != null) {
+				Boolean hasLiked = false;
+				int index = 0;
+				List<User> likes = post.getLikes();
+				if (likes != null) {
+					for (int i = 0; i < likes.size(); i++) {
+						if (likes.get(i).getId() == user.getId()) {
+							hasLiked = true;
+							index=i;
+							break;
+						}
+					}
+				}
+				if (hasLiked) {
+					likes.remove(index);
+				}
+				response.put("response", true);
+				response.put("post", postDao.save(post));
+				return new ResponseEntity<>(response, HttpStatus.OK);
+			}else {
+				response.put("response", false);
+				response.put("error", "either post or user was null");
+				response.put("post", post);
+				response.put("user", user);
+				return new ResponseEntity<>(response, HttpStatus.OK);
+			}
+			
+		} catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Comment could not be updated : " + e.getMessage());
+		}
+	}
+	
 	
 }

@@ -39,7 +39,7 @@ public class Post {
 	@Column(name = "pt_updated")
 	private Date updated;
 
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(orphanRemoval = true)
 	private List<User> likes = new ArrayList<>();
 
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
