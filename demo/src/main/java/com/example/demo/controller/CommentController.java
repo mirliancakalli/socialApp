@@ -40,8 +40,6 @@ public class CommentController {
 	@Autowired
 	private UserDao userDao;
 	
-	
-	
 	@PostMapping(value = "/comment/{postId}")
 	public ResponseEntity<?> insertComment(@RequestBody Comment comment,@PathVariable(value = "postId")  Long postId){
 		Map<String, Object> response = new HashMap<>();
@@ -54,7 +52,7 @@ public class CommentController {
 			List<Comment> commentList= post.getComments();
 			commentList.add(com);
 			post.setComments(commentList);
-			
+			post.setUpdated(new Date());
 			postDao.save(post);
 			logger.info("comment inserted successfully");
 
@@ -83,6 +81,7 @@ public class CommentController {
 					logger.info("comment with id="+commentId+" deleted successfully for postid="+postId);
 				}
 			}
+			post.setUpdated(new Date());
 			postDao.save(post);
 			
 			response.put("response", true);
