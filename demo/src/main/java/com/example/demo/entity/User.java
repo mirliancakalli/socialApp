@@ -36,11 +36,14 @@ public class User {
 	
 	@Column(name="us_phoneNumber")
 	private String phoneNumber;
+	
+	@Column(name="us_email")
+	private String email;
 
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", surname=" + surname + ", age=" + age + ", birthday=" + birthday
-				+ ", phoneNumber=" + phoneNumber + "]";
+				+ ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}
-	 
+ 
 }
